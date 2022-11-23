@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/bootstrap.css">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 100%;
+      height: 500px;
+      background: #ccc;
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our
+    utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be
+    customized as needed with our utility API.</p>
+  <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our
+    utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be
+    customized as needed with our utility API.</p>
+  <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our
+    utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be
+    customized as needed with our utility API.</p>
+  <p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our
+    utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be
+    customized as needed with our utility API.</p>
+
+  <!-- <div class="bigbox mb-5" style="width: 300px;height: 500px;background: red; overflow: hidden;">
+    <div class="box" style="width: 100px;height: 100px;background: #ffa; margin-left: 50%; margin-top: 50%;"></div>
+  </div> -->
+  <br>
+  <div class="container mt-5 p-1">
+    <div class="box position-relative rounded-3">
+      <div class="box2 position-absolute bg-black rounded-3 top-0 start-0 translate-middle"></div>
+      <div class="box2 position-absolute bg-black rounded-3 top-0 start-50 translate-middle"></div>
+      <div class="box2 position-absolute bg-black rounded-3 top-0 start-100 translate-middle"></div>
+      <div class="box2 position-absolute bg-black rounded-3 top-50 start-0 translate-middle"></div>
+      <div class="box2 position-absolute bg-black rounded-3 top-50 start-50 translate-middle"></div>
+      <div class="box2 position-absolute bg-black rounded-3 top-50 start-100 translate-middle"></div>
+      <div class="box2 position-absolute bg-black rounded-3 top-100 start-0 translate-middle"></div>
+      <div class="box2 position-absolute bg-black rounded-3 top-100 start-50 translate-middle"></div>
+      <div class="box2 position-absolute bg-black rounded-3 top-100 start-100 translate-middle"></div>
+    </div>
+  </div>
+  <script src="./JS/bootstrap.bundle.js"></script>
+</body>
+
+</html>

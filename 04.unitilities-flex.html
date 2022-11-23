@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/bootstrap.css">
+  <title>Document</title>
+  <style>
+    .container {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin: 20px 0;
+    }
+
+    .d-flex {
+      background: var(--bs-gray-200);
+      color: var(--bs-gray-200);
+      margin-bottom: 20px;
+      height: 200px;
+    }
+
+    .d-flex>:nth-child(1) {
+      background: var(--bs-purple);
+    }
+
+    .d-flex>:nth-child(2) {
+      background: var(--bs-pink);
+    }
+
+    .d-flex>:nth-child(3) {
+      background: var(--bs-yellow);
+    }
+
+    .d-flex>:nth-child(4) {
+      background: var(--bs-purple);
+    }
+
+    .d-flex>:nth-child(5) {
+      background: var(--bs-pink);
+    }
+
+    .d-flex>:nth-child(6) {
+      background: var(--bs-yellow);
+    }
+
+    .flex-1 {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>flex</h1>
+    <h2>水平</h2>
+    <div class="d-flex flex-row">
+      <div class="p-2">flex Item1</div>
+      <div class="p-2">flex Item2</div>
+      <div class="p-2">flex Item3</div>
+    </div>
+
+    <div class="d-flex flex-row-reverse">
+      <div class="p-2">flex Item1</div>
+      <div class="p-2">flex Item2</div>
+      <div class="p-2">flex Item3</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>垂直</h2>
+    <div class="d-flex flex-column">
+      <div class="p-2">flex Item1</div>
+      <div class="p-2">flex Item2</div>
+      <div class="p-2">flex Item3</div>
+    </div>
+
+    <div class="d-flex flex-column-reverse">
+      <div class="p-2">flex Item1</div>
+      <div class="p-2">flex Item2</div>
+      <div class="p-2">flex Item3</div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h3>flex-grow-1</h3>
+    <h2>.flex-grow-1 與 .flex-fill 作用相同，flex: 1 1 auto</h2>
+    <div class="d-flex">
+      <!-- flex 1 1 auto -->
+      <div class="p-2 flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Iure, dolor.</div>
+      <div class="p-2 flex-grow-1">flex Item2</div>
+      <div class="p-2 flex-grow-1">flex Item3</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h3>flex-1</h3>
+    <h2>如果要等寬需要自己建立一個flex: 1，flex: 1 1 0 </h2>
+    <div class="d-flex">
+      <div class="p-2 flex-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Iure, dolor.</div>
+      <div class="p-2 flex-1">flex Item2</div>
+      <div class="p-2 flex-1">flex Item3</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>爆版</h2>
+    <div class="d-flex align-items-center w-25 border border-5">
+      <div class="w-25 h-75 flex-shrink-0">flex Item1</div>
+      <div class="w-25 h-75 flex-shrink-0">flex Item2</div>
+      <div class="w-25 h-75 flex-shrink-0">flex Item3</div>
+      <div class="w-25 h-75 flex-shrink-0">flex Item4</div>
+      <div class="w-25 h-75 flex-shrink-0">flex Item5</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
